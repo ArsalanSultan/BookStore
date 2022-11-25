@@ -7,6 +7,7 @@ import Addbook from "./components/Addbook";
 import Home from "./components/Home";
 import SignIn from "./components/SignIn";
 import Signup from "./components/Signup";
+import BookDetail from "./components/Book/BookDetail";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path ="/about" element={<About/>} exact/>
         <Route path ="/signin" element={<SignIn/>} exact/>
         <Route path ="/signup" element={<Signup/>} exact/>
+        <Route path ="/books/:id" element={<BookDetail/>} exact/>
         
       </Routes>
 
